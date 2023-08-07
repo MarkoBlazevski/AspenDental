@@ -1,0 +1,109 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\msg\\source\\repos\\AspenDentalApiTask\\AspenDentalApiTask\\AspenDentalApiTask.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\msg\\source\\repos\\AspenDentalApiTask\\AspenDentalApiTask\\AspenDentalApiTask.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\msg\\source\\repos\\AspenDentalApiTask\\AspenDentalApiTask\\AspenDentalApiTask.csproj",
+        "projectName": "AspenDentalApiTask",
+        "projectPath": "C:\\Users\\msg\\source\\repos\\AspenDentalApiTask\\AspenDentalApiTask\\AspenDentalApiTask.csproj",
+        "packagesPath": "C:\\Users\\msg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\msg\\source\\repos\\AspenDentalApiTask\\AspenDentalApiTask\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\msg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "BoDi": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "ExtentReports": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.11.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.0, )"
+            },
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
