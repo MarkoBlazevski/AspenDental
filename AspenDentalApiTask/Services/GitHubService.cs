@@ -1,4 +1,5 @@
 ﻿using AspenDentalApiTask.Clients;
+using AspenDentalApiTask.Common;
 using AspenDentalApiTask.Models.Responses;
 using AspenDentalApiTask.Setup;
 using BoDi;
@@ -61,11 +62,6 @@ namespace AspenDentalApiTask.Services
             // Log the status code and response content
             Console.WriteLine($"Response Status Code: {response.StatusCode}");
             Console.WriteLine($"Response Content: {response.Content}");
-
-            if (response.StatusCode != HttpStatusCode.OK)
-            {
-                throw new Exception($"Unexpected status code: {response.StatusCode}");
-            }
 
             var responseBody = JsonConvert.DeserializeObject<UpdateGitHubRepoResponse>(response.Content);
 

@@ -1,7 +1,6 @@
-﻿using AspenDentalApiTask.Services;
-using AspenDentalApiTask.Setup;
-using AventStack.ExtentReports.Reporter;
+﻿using AspenDentalApiTask.Setup;
 using AventStack.ExtentReports;
+using AventStack.ExtentReports.Reporter;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 

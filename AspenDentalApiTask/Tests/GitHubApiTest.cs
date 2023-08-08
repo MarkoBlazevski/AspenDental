@@ -169,6 +169,23 @@ namespace AspenDentalApiTask.Tests
         }
 
         [Test]
+        public async Task UpdateRepo_WithValidNameAnd_WithoutBody_ReturnsBadRequest()
+        {
+            //Arrange
+            var createRepoBody = JsonBody.CreateGitHubRepoRequestBody(_repoName);
+
+            // First create a repo
+            var createRepoResponse = await _gitHubService.CreateRepoAsync(createRepoBody);
+            createdRepos.Add(_repoName);
+
+            // Then update the repo with no body
+            var updateRepoResponse = await _gitHubService.UpdateRepoAsync(createRepoResponse.ResponseBody.Owners.Login,
+                                                                          createRepoResponse.ResponseBody.Name, string.Empty);
+
+            Assert.That(updateRepoResponse.ResponseHttp, Is.EqualTo(HttpStatusCode.BadRequest));
+        }
+
+        [Test]
         public async Task DeleteRepo_WithValidName_NoContentResponse()
         {
             var createRepoBody = JsonBody.CreateGitHubRepoRequestBody(_repoName);
