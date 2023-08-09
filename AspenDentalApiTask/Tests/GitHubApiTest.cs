@@ -205,8 +205,20 @@ namespace AspenDentalApiTask.Tests
             }
             catch (Exception e)
             {
-                Assert.That(e.Message, Is.EqualTo(GitHubErrorMessages.UnexpectedStatusCode));
+                Assert.That(e.Message, Is.EqualTo(GitHubErrorMessages.NotFound));
             }
+        }
+
+        [Test]
+        public async Task DeleteRepo_UnexistingRepo_NoContentResponse()
+        {
+
+            // Then delete the repo that do not exist
+            var response = await _gitHubService.DeleteRepoAsync(_variables.LoginName, _variables.UnexistingRepoName);
+
+            // Try to get the deleted repo, expect a not found error
+            Assert.That(response.ResponseHttp, Is.EqualTo(HttpStatusCode.NotFound));
+
         }
 
         [TearDown]

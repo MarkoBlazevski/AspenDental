@@ -26,5 +26,4 @@ namespace AspenDentalApiTask.Clients
             return await Client.ExecuteAsync(request);
         }
     }
-
 }

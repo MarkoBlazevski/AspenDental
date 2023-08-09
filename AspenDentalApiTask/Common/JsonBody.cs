@@ -4,12 +4,12 @@ namespace AspenDentalApiTask.Common
 {
     public class JsonBody
     {
-        public static CreateGitHubRepoRequest CreateGitHubRepoRequestBody(string name) => new CreateGitHubRepoRequest()
+        public static CreateGitHubRepoRequest CreateGitHubRepoRequestBody(string name) => new()
         {
             Name = name
         };
 
-        public static UpdateGitHubRepoRequest UpdateGitHubRepoRequestBody(bool status, bool siteAdmin) => new UpdateGitHubRepoRequest()
+        public static UpdateGitHubRepoRequest UpdateGitHubRepoRequestBody(bool status, bool siteAdmin) => new()
         {
             Private = status,
             SiteAdmin = siteAdmin

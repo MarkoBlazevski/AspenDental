@@ -31,7 +31,7 @@ namespace AspenDentalApiTask.Setup
         public List<float> NegativeNumAsSideValue { get; set; }
         public List<float> FloatNumAsSideValue { get; set; }
         public List<float> BaseIsTooBig { get; set; }
-
+        public string UnexistingRepoName { get; set; }
 
         private static string PathToDirectory()
         {
