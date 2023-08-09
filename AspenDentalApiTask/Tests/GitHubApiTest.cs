@@ -218,7 +218,6 @@ namespace AspenDentalApiTask.Tests
 
             // Try to get the deleted repo, expect a not found error
             Assert.That(response.ResponseHttp, Is.EqualTo(HttpStatusCode.NotFound));
-
         }
 
         [TearDown]

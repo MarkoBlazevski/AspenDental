@@ -9,5 +9,7 @@
         public const string AIsRequired = "A is required and A must be positive integer";
         public const string NotATriangle = "Not a triangle.";
         public const string UnableToFormValidTriangle = "Unable to form a valid triangle with the given values!";
+        public const string UnsupportedMediaType = "Unsupported Media Type";
+        public const string InputFieldIsRequired = "The input field is required.";
     }
 }

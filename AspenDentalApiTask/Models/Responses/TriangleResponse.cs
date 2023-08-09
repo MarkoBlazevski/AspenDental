@@ -14,6 +14,9 @@ namespace AspenDentalApiTask.Models.Responses
         {
             [JsonProperty("A")]
             public List<string> A { get; set; }
+            [JsonProperty("input")]
+            public List<string> Input { get; set; }
+
         }
 
         [JsonProperty("title")]

@@ -156,5 +156,15 @@ namespace AspenDentalApiTask.Tests
             // Check if the response HTTP status code is in the 200s or 300s range
             Assert.That((int)ResponseHttp, Is.GreaterThanOrEqualTo(400), "Unexpected success response");
         }
+
+        [Test]
+        [Parallelizable]
+        public async Task GetTriangleType_InvalidTriangleRequest_InputFieldIsRequired_ShouldReturn_BadRequest()
+        {
+            var (ResponseHttp, ResponseBody) = await _triangleService.GetTriangleTypeAsync(_variables.LoginName);
+
+            Assert.That(ResponseHttp, Is.EqualTo(HttpStatusCode.BadRequest));
+            Assert.That(ResponseBody.Error.Input[0], Is.EqualTo(TriangleMessages.InputFieldIsRequired));
+        }
     }
 }
