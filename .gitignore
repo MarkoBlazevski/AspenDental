@@ -8,17 +8,6 @@
 *.userosscache
 *.sln.docstates
 
-# User-specific files
-*.rsuser
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
-
 # Folder config file
 Desktop.ini
 Recycle Bin used on file shares
@@ -31,10 +20,6 @@ $RECYCLE.BIN/
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
-
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
 
 # Uncomment if you have tasks that create the project's static files in wwwroot
 #wwwroot/
